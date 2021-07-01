@@ -3,7 +3,7 @@
 This project contains docker files and scripts which allow user to build and launch [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics) project easily on particular data-set.
 
 
-Buld needed docker image first:
+Build needed docker image first:
 ```bash
 ./build_all_layers.sh
 ```

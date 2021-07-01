@@ -1,7 +1,7 @@
 #!/bin/bash 
 xhost +local:root
 
-docker run --name="ros_kimera_semantics"--rm \
+docker run --name="ros_kimera_semantics" --rm \
 -e DISPLAY=$DISPLAY \
 -v $XSOCK:$XSOCK \
 -v $HOME/.Xauthority:/root/.Xauthority \
