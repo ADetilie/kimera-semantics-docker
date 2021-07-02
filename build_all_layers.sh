@@ -8,8 +8,6 @@ echo "=== layer_base ===" && \
 cd layer_base && ./build_image.sh && \
 echo "=== layer_kimera_semantics_installed ===" && \
 cd ../layer_kimera_semantics_installed && ./build_image.sh && \
-echo "=== layer_start_kimera_entrypoint ===" && \
-cd ../layer_start_kimera_entrypoint && ./build_image.sh && \
 echo "=== SUCCESS ===" || \
 echo "=== FAILURE ==="
 
