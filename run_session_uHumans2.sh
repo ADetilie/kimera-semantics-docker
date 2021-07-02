@@ -9,6 +9,6 @@ docker run --name="ros_kimera_semantics" --rm \
 --privileged \
 --net=host \
 kimera_semantics_custom:kimera_semantics_installed \
-./tmp/kimera-semantics-custom/scripts/start_simulation.sh
+./tmp/kimera-semantics-custom/scripts/start_simulation_uHumans2.sh
 
 xhost -local:root
