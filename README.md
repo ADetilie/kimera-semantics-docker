@@ -36,4 +36,12 @@ Launch Kimera-Semantics:
 ```
 
 
+## Run in interactive mode
 
+To run kimera-semantics-docker in interactive mode, simply call:
+```bash
+./run_session_interactive.sh
+```
+
+---
+After simulation completion *.ply file with reconstructed mesh should be stored in `Input_Output` directory.
