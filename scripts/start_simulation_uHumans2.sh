@@ -6,9 +6,9 @@ ln -vs /tmp/kimera-semantics-custom/Input_Output/kimera_semantics_demo.bag ~/cat
 
 # start ROS and related applications
 roscore & > /dev/null 2>&1 &
-sleep 5
+sleep 10
 roslaunch kimera_semantics_ros kimera_semantics_uHumans2.launch play_bag:=true > /dev/null 2>&1 &
-sleep 5
+sleep 10
 rviz -d $(rospack find kimera_semantics_ros)/rviz/kimera_semantics_uHumans2.rviz
 
 # save mesh from kimera_semantics and save it as *.ply file

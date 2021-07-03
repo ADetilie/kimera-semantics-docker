@@ -2,20 +2,38 @@
 
 This project contains docker files and scripts which allow user to build and launch [Kimera-Semantics](https://github.com/MIT-SPARK/Kimera-Semantics) project easily on particular data-set.
 
+# How to use
 
-Build needed docker image first:
+Build needed docker images first:
 ```bash
 ./build_all_layers.sh
 ```
 
-Create directory with `Input_Output` name inside the project directory.
 
-Copy dataset *.bag file into `Input_Output` directory.
+## Run with default dataset
+
+Download [kimera_semantics](https://drive.google.com/file/d/1SG8cfJ6JEfY2PGXcxDPAMYzCcGBEh4Qq/view) dataset.
+
+Copy downloaded dataset into `Input_Output` directory.
 
 Launch Kimera-Semantics:
 ```bash
 ./run_session.sh
 ```
 
-## Caution!
-Currently project works properly only with `kimera_semantics_demo.bag` dataset which could be downloaded [here](https://drive.google.com/file/d/1SG8cfJ6JEfY2PGXcxDPAMYzCcGBEh4Qq/view).
+
+## Run with uHumans2 dataset
+
+Download [uHumans2](http://web.mit.edu/sparklab/datasets/uHumans2/) dataset.
+
+Rename downloaded dataset to `kimera_semantics_demo.bag`.
+
+Copy downloaded dataset into `Input_Output` directory.
+
+Launch Kimera-Semantics:
+```bash
+./run_session_uHumans2.sh
+```
+
+
+
