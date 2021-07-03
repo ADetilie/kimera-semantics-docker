@@ -1,6 +1,9 @@
 #!/bin/bash
 ROS_DISTRO=melodic # Change `melodic` to your ROS distro
 
+# Add default DNS server as GoogleDNS
+sudo echo 'nameserver 8.8.8.8' > /etc/resolv.conf
+
 # Setup catkin workspace
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
@@ -21,7 +24,7 @@ git clone https://github.com/MIT-SPARK/Kimera-Semantics.git
 wstool init # Use unless wstool is already initialized
 
 # Optionally add Kimera-Semantics to the rosinstall file
-# wstool scrape
+#wstool scrape
 
 # For ssh:
 #wstool merge Kimera-Semantics/install/kimera_semantics_ssh.rosinstall

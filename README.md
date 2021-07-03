@@ -43,5 +43,22 @@ To run kimera-semantics-docker in interactive mode, simply call:
 ./run_session_interactive.sh
 ```
 
----
+# Output
+
 After simulation completion *.ply file with reconstructed mesh should be stored in `Input_Output` directory.
+
+# Tips
+
+To improve kimera-semantics performance, *.bag file could be decompressed. <br/>
+To do it, run docker image in interactive mode:
+```bash
+./run_session_interactive.sh
+```
+
+And unpack *.bag file inside docker:
+```bash
+cd /tmp/kimera-semantics-custom/Input_Output
+rosbag decompress kimera_semantics_demo.bag
+```
+
+After that - you can leave interactive mode and run kimera-semantics simulation and use unpacked *.bag file as an input.
