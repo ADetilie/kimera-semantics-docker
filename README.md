@@ -14,7 +14,7 @@ Build needed docker images first:
 
 Download [kimera_semantics](https://drive.google.com/file/d/1SG8cfJ6JEfY2PGXcxDPAMYzCcGBEh4Qq/view) dataset.
 
-Copy downloaded dataset into `Input_Output` directory.
+Copy downloaded dataset into `Input` directory.
 
 Launch Kimera-Semantics:
 ```bash
@@ -28,7 +28,7 @@ Download [uHumans2](http://web.mit.edu/sparklab/datasets/uHumans2/) dataset.
 
 Rename downloaded dataset to `kimera_semantics_demo.bag`.
 
-Copy downloaded dataset into `Input_Output` directory.
+Copy downloaded dataset into `Input` directory.
 
 Launch Kimera-Semantics:
 ```bash
@@ -45,7 +45,7 @@ To run kimera-semantics-docker in interactive mode, simply call:
 
 # Output
 
-After simulation completion *.ply file with reconstructed mesh should be stored in `Input_Output` directory.
+After simulation completion *.ply file with reconstructed mesh should be stored in `Output` directory.
 
 # Tips
 
@@ -57,7 +57,7 @@ To do it, run docker image in interactive mode:
 
 And unpack *.bag file inside docker:
 ```bash
-cd /tmp/kimera-semantics-custom/Input_Output
+cd /tmp/kimera-semantics-custom/Input
 rosbag decompress kimera_semantics_demo.bag
 ```
 
